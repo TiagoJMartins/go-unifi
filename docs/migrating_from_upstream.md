@@ -83,7 +83,7 @@ if err != nil {
 
 ## Migration Steps
 
-1. Replace the import from `github.com/paultyng/go-unifi` to `github.com/filipowm/go-unifi`
+1. Replace the import from `github.com/paultyng/go-unifi` to `github.com/tiagojmartins/go-unifi`
 2. Replace manual client creation with `NewClient` and appropriate `ClientConfig`
 3. If using TLS skip verification, use the `VerifySSL` option in `ClientConfig`:
    ```go

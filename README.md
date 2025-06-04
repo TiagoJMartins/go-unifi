@@ -1,7 +1,7 @@
 # UniFi Go SDK
 ![GitHub Release](https://img.shields.io/github/v/release/filipowm/go-unifi)
-[![Docs](https://img.shields.io/badge/docs-reference-blue)](https://github.com/filipowm/go-unifi/blob/main/docs/readme.md)
-[![GoDoc](https://godoc.org/github.com/filipowm/go-unifi?status.svg)](https://godoc.org/github.com/filipowm/go-unifi)
+[![Docs](https://img.shields.io/badge/docs-reference-blue)](https://github.com/tiagojmartins/go-unifi/blob/main/docs/readme.md)
+[![GoDoc](https://godoc.org/github.com/tiagojmartins/go-unifi?status.svg)](https://godoc.org/github.com/tiagojmartins/go-unifi)
 ![GitHub branch check runs](https://img.shields.io/github/check-runs/filipowm/go-unifi/main)
 ![GitHub License](https://img.shields.io/github/license/filipowm/go-unifi)
 
@@ -87,7 +87,7 @@ c, err := unifi.NewClient(&unifi.ClientConfig{
 })
 ```
 
-List of available client configuration options is available [here](https://pkg.go.dev/github.com/filipowm/go-unifi/unifi#ClientConfig).
+List of available client configuration options is available [here](https://pkg.go.dev/github.com/tiagojmartins/go-unifi/unifi#ClientConfig).
 
 ### Customizing HTTP Client
 
@@ -108,7 +108,7 @@ c, err := unifi.NewClient(&unifi.ClientConfig{
 You can use interceptors to modify requests and responses. This gives you more control over the client behavior
 and flexibility to add custom logic.
 
-To use interceptor logic, you need to create a struct implementing [ClientInterceptor](https://pkg.go.dev/github.com/filipowm/go-unifi/unifi#ClientInterceptor) interface.
+To use interceptor logic, you need to create a struct implementing [ClientInterceptor](https://pkg.go.dev/github.com/tiagojmartins/go-unifi/unifi#ClientInterceptor) interface.
 For example, you can use interceptors to log requests and responses:
 
 ```go

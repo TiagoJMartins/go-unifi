@@ -1,6 +1,7 @@
-module github.com/filipowm/go-unifi
+module github.com/tiagojmartins/go-unifi
 
 go 1.23.5
+
 toolchain go1.24.1
 
 require (

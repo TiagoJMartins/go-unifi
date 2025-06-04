@@ -106,7 +106,7 @@ c, err := unifi.NewClient(&unifi.ClientConfig{
 
 Interceptors let you hook into the request and response flow. They can be used for logging, metrics, or modifying requests/responses.
 
-Implement the [ClientInterceptor](https://pkg.go.dev/github.com/filipowm/go-unifi/unifi#ClientInterceptor) interface:
+Implement the [ClientInterceptor](https://pkg.go.dev/github.com/tiagojmartins/go-unifi/unifi#ClientInterceptor) interface:
 
 ```go
 // LoggingInterceptor logs each request and response
@@ -155,7 +155,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/filipowm/go-unifi/unifi"
+	"github.com/tiagojmartins/go-unifi/unifi"
 )
 
 // customTransportCustomizer customizes the HTTP transport, e.g., setting idle connection limits and TLS options.
