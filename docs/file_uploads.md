@@ -22,7 +22,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/tiagojmartins/go-unifi/unifi"
+	"github.com/paultyng/go-unifi/unifi"
 )
 
 func main() {

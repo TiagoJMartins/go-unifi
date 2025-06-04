@@ -1,4 +1,4 @@
-module github.com/tiagojmartins/go-unifi
+module github.com/paultyng/go-unifi
 
 go 1.23.5
 

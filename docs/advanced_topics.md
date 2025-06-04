@@ -60,7 +60,7 @@ validation and error handling provided by the SDK.
 ## Interceptors and Middleware
 
 Interceptors provide hooks into the request/response cycle and can be used for logging, metrics collection, or modifying
-requests before they are sent. They implement the [ClientInterceptor](https://pkg.go.dev/github.com/tiagojmartins/go-unifi/unifi#ClientInterceptor) interface.
+requests before they are sent. They implement the [ClientInterceptor](https://pkg.go.dev/github.com/paultyng/go-unifi/unifi#ClientInterceptor) interface.
 
 ### Example: Advanced Logging Interceptor
 
@@ -206,7 +206,7 @@ The UniFi Go SDK is designed to be adaptable:
 - **Custom Extensions:** You can fork the SDK and add custom methods or enhancements that fit your application needs. But I would greatly appreciate if you could contribute them back to the main repository.
 - **Community Support:** Join our community discussions to share improvements and ask for guidance on advanced topics.
 
-For more details on contributing, see the [Contributing Guidelines](https://github.com/tiagojmartins/go-unifi/blob/main/CONTRIBUTING.md).
+For more details on contributing, see the [Contributing Guidelines](https://github.com/paultyng/go-unifi/blob/main/CONTRIBUTING.md).
 
 ---
 
