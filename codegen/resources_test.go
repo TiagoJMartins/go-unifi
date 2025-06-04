@@ -299,7 +299,7 @@ func TestFieldInfoFromValidationErrors(t *testing.T) {
 			if tc.errorContains != "" {
 				require.ErrorContains(t, err, tc.errorContains)
 				a.NotNil(fieldInfo)
-				a.EqualValues(&FieldInfo{}, fieldInfo)
+				a.Equal(&FieldInfo{}, fieldInfo)
 			} else {
 				require.NoError(t, err)
 				a.NotNil(fieldInfo)

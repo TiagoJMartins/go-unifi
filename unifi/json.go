@@ -86,5 +86,5 @@ func (e *booleanishString) UnmarshalJSON(b []byte) error {
 		*e = booleanishString(false)
 		return nil
 	}
-	return errors.New("Could not unmarshal JSON value.")
+	return errors.New("could not unmarshal JSON value")
 }

@@ -1,35 +1,52 @@
----
+version: "2"
 linters:
-  enable-all: true
+  default: all
   disable:
-    - 'depguard'
-    - 'mnd'
-    - 'nlreturn'
-    - 'tagliatelle'
-    - 'ireturn'
-
-    # Temporary
-    - 'cyclop'
-    - 'dupl'
-    - 'err113'
-    - 'exhaustruct'
-    - 'forbidigo'
-    - 'funlen'
-    - 'gochecknoglobals'
-    - 'gocognit'
-    - 'goconst'
-    - 'gocritic'
-    - 'gocyclo'
-    - 'godox'
-    - 'gosec'
-    - 'lll'
-    - 'maintidx'
-    - 'nestif'
-    - 'revive'
-    - 'stylecheck'
-    - 'varnamelen'
-    - 'wrapcheck'
-    - 'wsl'
-
-    # Deprecated
-    - 'exportloopref'
+    - cyclop
+    - depguard
+    - dupl
+    - err113
+    - exhaustruct
+    - forbidigo
+    - funlen
+    - gochecknoglobals
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godox
+    - gosec
+    - ireturn
+    - lll
+    - maintidx
+    - mnd
+    - nestif
+    - nlreturn
+    - revive
+    - tagliatelle
+    - varnamelen
+    - wrapcheck
+    - wsl
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$

@@ -75,7 +75,7 @@ func TestApplyToResource(t *testing.T) {
 	}
 	err = res.FieldProcessor("Channel", fiChannelMismatch)
 	require.NoError(t, err)
-	a.Equal("", fiChannelMismatch.CustomUnmarshalType, "Override should not apply when FieldType does not match")
+	a.Empty(fiChannelMismatch.CustomUnmarshalType, "Override should not apply when FieldType does not match")
 }
 
 func TestCompositeFieldProcessor(t *testing.T) {

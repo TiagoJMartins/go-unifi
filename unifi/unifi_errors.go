@@ -139,7 +139,7 @@ func (d *DefaultResponseErrorHandler) HandleError(resp *http.Response) error {
 		RequestMethod: resp.Request.Method,
 		RequestURL:    resp.Request.URL.String(),
 	}
-	if errBody.apiV2ResponseError.Code != "" || errBody.apiV2ResponseError.Message != "" {
+	if errBody.Code != "" || errBody.Message != "" {
 		parseApiV2Error(errBody.apiV2ResponseError, &serverError)
 	} else {
 		parseApiV1Error(errBody.apiV1ResponseError, &serverError)
